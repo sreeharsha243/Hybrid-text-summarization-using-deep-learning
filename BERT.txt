@@ -1,0 +1,46 @@
+
+Original Text: Scientists at [University Name] have developed a revolutionary new gene therapy that shows promising results in curing cancer. Early trials indicate a 90% success rate in shrinking tumors in patients with aggressive forms of the disease. This breakthrough could potentially save millions of lives and change the landscape of cancer treatment.
+
+
+How Bert Works:
+
+Normalization: Text is first converted to lowercase, removed of punctuation and special 			    	characters (unless relevant), and potentially stemmed or lemmatized.
+Tokenization: Words and punctuation are separated into individual units called tokens.
+		  	token identification in BERT involves a combination of pre-defined rules 			(tokenization, special tokens) and the model's own learning (wordpiece 				tokenization, context-aware embeddings). This allows BERT to effectively 			handle diverse vocabulary and understand the relationships between words 			within a sentence, contributing to its powerful language processing 				capabilities.
+
+Embedding: Each token is then converted into a numerical vector called an embedding, 		     		capturing its meaning and relationship to other words
+
+Transformer Encoder: The tokens and their embeddings are passed through a series of layers 			called the Transformer Encoder. This complex neural network analyzes the 			relationships between words, understanding the context and dependencies 			within the sentence.
+Pre-training on Massive Datasets: BERT is trained on vast amounts of text data, like books 			and articles, learning the general patterns of language and how words 				interact. This pre-training allows it to understand the nuances of the news 			article.
+Specific Task Adaptation: Depending on the desired outcome, BERT can be fine-tuned for 				specific tasks like text summarization or question answering.
+
+Applying BERT for Text Summarization:
+
+Sentence Scoring: BERT assigns a score to each sentence, indicating its importance based on 			its relevance to the main topic and its coherence with the overall 				context.
+Redundancy Detection: BERT identifies repetitive information or sentences that simply 				rephrase the same point. These are excluded from the summary to avoid 				redundancy.
+Summary Generation: Using the scored sentences and its understanding of the relationships 			between them, BERT generates a concise summary that captures the key 				points of the article while maintaining faithfulness to the original 				content.
+
+Limitations of BERT:
+
+Black Box Nature: The internal workings of BERT can be opaque, making it challenging to 				understand how it arrives at its conclusions.
+Bias and Errors: BERT's performance depends on the quality of its training data, which may 			contain biases or inaccuracies reflected in its summaries.
+Limited Creativity: While BERT can generate summaries, it may struggle with creative tasks 			like generating new ideas or interpretations of the text.
+
+
+
+Short Summary (1-2 sentences):
+
+	Scientists at [University Name] developed a promising new gene therapy that successfully shrinks tumors in 90% of cancer patients, potentially revolutionizing cancer treatment.
+
+Medium Summary (3-5 sentences):
+
+	A groundbreaking gene therapy developed by [University Name] shows remarkable potential for curing cancer. Early trials revealed a 90% success rate in shrinking tumors in patients with aggressive forms of the disease. This breakthrough could save millions of lives and transform the way we treat cancer. However, further research is needed to confirm these results and ensure long-term safety.
+
+Long Summary (5+ sentences):
+
+	Scientists at [University Name] made a major leap in the fight against cancer with a novel gene therapy demonstrating impressive efficacy in shrinking tumors. Early clinical trials indicate a 90% success rate in reducing tumor size in patients with aggressive forms of the disease. This potentially life-saving treatment holds promise for significantly improving cancer outcomes and changing the landscape of treatment options. While further research is necessary to confirm these findings and assess potential long-term effects, this discovery marks a significant step forward in the battle against cancer.
+
+
+
+
+	The specific output of the BERT model will depend on the parameters used during summarization, such as desired length, focus on specific aspects of the text, and the specific BERT model itself. However, the examples above capture the essence of how BERT can condense the key information from the original text while maintaining accuracy and coherence.
